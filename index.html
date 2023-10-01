@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор с дизайном от Iphone</title>
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div id="calculator">
+        <input id="input" type="text" placeholder="0" autocomplete="off" readonly></input>
+        <div id="listButton"></div>
+    </div>
+</body>
+</html>
+
+<style>
+#calculator{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 8px 8px 8px;
+    background-color: #090909;
+    border-radius: 20px;
+}
+.button{
+    float: left;
+    background-color: #373737;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    margin: 0px 0px 7px 7px;
+    color: #efecec;
+    cursor: pointer;    
+}   
+.button.child15:focus, :focus-visible{
+    color:#ffa500;
+    background-color: #fff; 
+    outline: none;
+}
+.button.child18:focus-visible{    
+    outline: none;
+}
+.button.child11:focus, :focus-visible{
+    color:#ffa500;
+    background-color: #fff; 
+    outline: none;
+}
+.button.child7:focus, :focus-visible{
+    color:#ffa500;
+    background-color: #fff; 
+    outline: none;
+}
+.button.child3:focus, :focus-visible{
+    color:#ffa500;
+    background-color: #fff; 
+    outline: none;
+}
+.button:hover{
+    filter: brightness(115%);
+}
+#listButton{
+    height: 185px;
+    width: 175px;
+    padding-top: 10px;
+}
+.button.child16{
+    text-align:left;
+    padding: 0px 0px 0px 10px;
+    width: 66px;
+    border-radius: 65px 65px 65px 65px / 200% 200%;   
+}
+.button.child18, .button.child15, .button.child11, .button.child7, .button.child3{
+    color: #ffffff;
+    background-color: #ffa500; 
+}
+
+.button.child0, .button.child1, .button.child2 {
+    color: #0b0b0b;
+    background-color: #a7a7a7; 
+}
+#input{
+    background-color: #000;
+    border: none;
+    text-align: right;
+    font-size: 33px;
+    width: 165px;
+    color:#fff;
+    padding-top: 15px;
+}
+#input::-webkit-input-placeholder{
+    color:#fff;
+}
+#input:focus-visible{
+    outline-width: 0;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+</style>
